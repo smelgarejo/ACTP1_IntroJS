@@ -15,5 +15,18 @@
     <p> clic !! </p>
     <h3> no clic !! </h3>
     <p> clic !! </p>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    //Acción de Click
+    
+    $('#row-3').click(function(){
+    console.log('Hice un click');
+    $('#row-3').css({
+    backgroundColor: 'gray',
+    transition: 'all 1.5s'
+    }, 1000);
+    });
+
   </body>
 </html>
