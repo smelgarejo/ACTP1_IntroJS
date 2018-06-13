@@ -56,8 +56,16 @@ Seleccionar el último row dentro de la tabla (sin utilizar el id, puesto que el
     <script>
       $('h1').css('color', 'red');
       $('.section-1').css('background-color', '#fffc0c'); 
-      var valor = $(".counter").html();
-      $(".counter").html (Number (valor) + 10) 
+
+      var numero = parseInt($('.counter').html() ) + 10;
+      $('.counter').html(numero);
+
+      //Acción de Click
+      $('#row-3').click(function(){
+        alert('Click :)');
+        $('#row-3').css('background-color' , 'gray');
+      })
+
     </script>
   </body>
 </html>
